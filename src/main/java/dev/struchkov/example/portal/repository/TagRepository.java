@@ -1,6 +1,6 @@
-package com.yprac.spring.hibernate.onetomany.repository;
+package dev.struchkov.example.portal.repository;
 
-import com.yprac.spring.hibernate.onetomany.model.Tag;
+import dev.struchkov.example.portal.model.Tag;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
@@ -8,4 +8,5 @@ import java.util.List;
 public interface TagRepository extends JpaRepository<Tag, Long> {
 
     List<Tag> findTagsByTutorialsId(Long tutorialId);
+
 }
